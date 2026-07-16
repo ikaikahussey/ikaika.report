@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public Power Plan · Ikaika Hussey</title>
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-italic-500-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-italic-500-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-italic-600-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-italic-600-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-500-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-500-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-600-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-600-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-700-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/zilla-slab-700-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { overflow-x: clip; }
+  body { margin: 0; background:#f3f0e9; -webkit-font-smoothing: antialiased; }
+  a { color:#1f2f6e; text-decoration: none; } a:hover { color:#c12f2a; }
+  img { max-width: 100%; }
+
+  /* ===== Responsive / mobile ===== */
+  @media (max-width: 640px) {
+    .pl-nav { flex-wrap: wrap !important; height: auto !important; min-height: 56px; padding: 10px 12px !important; row-gap: 6px !important; }
+    .pl-hero { padding: 44px 16px 40px 16px !important; }
+    .pl-hero h1 { font-size: 40px !important; }
+    .pl-hero p { font-size: 18px !important; }
+    .pl-section { padding: 40px 16px 46px 16px !important; }
+    .pl-section h2 { font-size: 28px !important; }
+    .pl-voice h2 { font-size: 26px !important; }
+    .pl-step { gap: 14px !important; padding: 20px 18px !important; }
+    .pl-step .pl-no { font-size: 34px !important; width: 38px !important; }
+    .pl-step .pl-title { font-size: 20px !important; }
+    .pl-step .pl-body { font-size: 16px !important; }
+    .pl-footer { padding: 36px 16px 32px 16px !important; }
+  }
+</style>
+</head>
+<body>
+<div style="font-family:'Zilla Slab',Georgia,serif; color:#16171c;">
+
+  <!-- ===== NAV ===== -->
+  <div style="position:sticky; top:0; z-index:50; background:rgba(31,47,110,.97); backdrop-filter:saturate(140%) blur(6px); border-bottom:3px solid #e0a83a;">
+    <div style="max-width:1040px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; gap:20px;" class="pl-nav">
+      <a href="#top" style="flex:none; display:flex; align-items:baseline; gap:9px; color:#ffffff;">
+        <span style="font-weight:700; font-size:19px; letter-spacing:.01em; color:#ffffff;">Ikaika Hussey</span>
+        <span style="font-weight:700; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:#e0a83a;">The Plan</span>
+      </a>
+      <div style="flex:1;"></div>
+      <a href="index.html" style="display:inline-block; padding:8px 12px; font-weight:600; font-size:13.5px; color:#c7cbe0;"><span style="color:#e0a83a;">←</span> Legislative Report</a>
+      <a href="#voice" style="margin-left:8px; padding:9px 17px; background:#c12f2a; color:#ffffff; font-weight:700; font-size:13.5px; border-radius:5px;">Power our future</a>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div id="top" class="pl-hero" style="background:#f3f0e9; padding:74px 24px 58px 24px; border-bottom:1px solid #e4e0d6;">
+    <div style="max-width:1040px; margin:0 auto;">
+      <div style="font-family:'Zilla Slab'; font-weight:700; font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:#c12f2a;">A plan for District 29 · and all of Hawaiʻi</div>
+      <h1 style="font-family:'Zilla Slab'; font-weight:700; font-size:66px; line-height:.98; margin:16px 0 0 0; color:#16171c; letter-spacing:-.01em; max-width:900px;">Free electricity <span style="font-family:'Newsreader',Georgia,serif; font-style:italic; font-weight:500; color:#1f2f6e;">for locals.</span></h1>
+      <p style="max-width:730px; font-family:'Newsreader',Georgia,serif; font-size:22px; line-height:1.45; color:#4a463e; margin:22px 0 0 0;">Hawaiʻi sits on abundant sun and geothermal heat — and pays some of the highest power bills in the nation for imported oil and gas. We can change that: put a small slice of the state's reserves to work building power the public owns, and send the savings back to local families.</p>
+
+      <div style="display:flex; gap:28px; flex-wrap:wrap; margin-top:34px;">
+        <div style="display:flex; align-items:baseline; gap:10px;">
+          <span style="font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:46px; color:#1f2f6e; line-height:1;">2045</span>
+          <span style="font-family:'Zilla Slab'; font-weight:600; font-size:13.5px; color:#6b665c; line-height:1.25; max-width:150px;">clean-energy goal — hit early, not late</span>
+        </div>
+        <div style="width:1px; background:#e4e0d6;"></div>
+        <div style="display:flex; align-items:baseline; gap:10px;">
+          <span style="font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:46px; color:#1f2f6e; line-height:1;">½</span>
+          <span style="font-family:'Zilla Slab'; font-weight:600; font-size:13.5px; color:#6b665c; line-height:1.25; max-width:160px;">of residents still have no solar — we change that</span>
+        </div>
+        <div style="width:1px; background:#e4e0d6;"></div>
+        <div style="display:flex; align-items:baseline; gap:10px;">
+          <span style="font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:46px; color:#c12f2a; line-height:1;">No</span>
+          <span style="font-family:'Zilla Slab'; font-weight:600; font-size:13.5px; color:#6b665c; line-height:1.25; max-width:150px;">LNG — no locking in imported fossil fuels</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== THE PLAN ===== -->
+  <div class="pl-section" style="background:#1f2f6e; padding:56px 24px 64px 24px;">
+    <div style="max-width:1040px; margin:0 auto;">
+      <div style="font-family:'Zilla Slab'; font-weight:700; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:#e0a83a;">The plan</div>
+      <h2 style="font-family:'Zilla Slab'; font-weight:700; font-size:38px; line-height:1.04; color:#ffffff; margin:12px 0 0 0; max-width:780px;">Power we own. Bills we can afford.</h2>
+
+      <div style="display:flex; flex-direction:column; gap:16px; margin-top:34px;">
+                  <div class="pl-step" style="display:flex; gap:26px; align-items:flex-start; background:#ffffff; border-radius:12px; border-left:6px solid #e0a83a; padding:30px 34px;">
+            <div class="pl-no" style="flex:none; font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:58px; color:#e0a83a; line-height:.9; width:64px; text-align:center;">1</div>
+            <div style="flex:1; min-width:0;">
+              <div class="pl-title" style="font-family:'Zilla Slab'; font-weight:700; font-size:24px; color:#1f2f6e; line-height:1.1;">Publicly-owned solar and geothermal</div>
+              <div class="pl-body" style="font-family:'Newsreader',Georgia,serif; font-size:18px; line-height:1.5; color:#4a463e; margin-top:12px;">Put a small portion of the state&#x27;s abundant reserves to work building solar and geothermal projects the public owns. Power we own is power we control — the returns come back to residents as lower bills instead of leaving as profit and imported-fuel costs.</div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Public ownership</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Solar</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Geothermal</span>
+              </div>
+            </div>
+          </div>
+          <div class="pl-step" style="display:flex; gap:26px; align-items:flex-start; background:#ffffff; border-radius:12px; border-left:6px solid #e0a83a; padding:30px 34px;">
+            <div class="pl-no" style="flex:none; font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:58px; color:#e0a83a; line-height:.9; width:64px; text-align:center;">2</div>
+            <div style="flex:1; min-width:0;">
+              <div class="pl-title" style="font-family:'Zilla Slab'; font-weight:700; font-size:24px; color:#1f2f6e; line-height:1.1;">Hit our 2045 clean-energy goal early</div>
+              <div class="pl-body" style="font-family:'Newsreader',Georgia,serif; font-size:18px; line-height:1.5; color:#4a463e; margin-top:12px;">Hawaiʻi is already committed to 100% renewable electricity by 2045. With public investment driving new generation, we can beat that deadline — locking in clean, homegrown power years ahead of schedule.</div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">100% renewable</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Ahead of schedule</span>
+              </div>
+            </div>
+          </div>
+          <div class="pl-step" style="display:flex; gap:26px; align-items:flex-start; background:#ffffff; border-radius:12px; border-left:6px solid #e0a83a; padding:30px 34px;">
+            <div class="pl-no" style="flex:none; font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:58px; color:#e0a83a; line-height:.9; width:64px; text-align:center;">3</div>
+            <div style="flex:1; min-width:0;">
+              <div class="pl-title" style="font-family:'Zilla Slab'; font-weight:700; font-size:24px; color:#1f2f6e; line-height:1.1;">Stop importing price-volatile fossil fuels — no LNG</div>
+              <div class="pl-body" style="font-family:'Newsreader',Georgia,serif; font-size:18px; line-height:1.5; color:#4a463e; margin-top:12px;">Every barrel of imported oil ties our bills to a global market we can&#x27;t control. This plan ends that dependence and rejects new liquefied natural gas (LNG) — no locking Hawaiʻi into another imported fossil fuel just as we&#x27;re breaking free of the first.</div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">No LNG</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Energy independence</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Stable bills</span>
+              </div>
+            </div>
+          </div>
+          <div class="pl-step" style="display:flex; gap:26px; align-items:flex-start; background:#ffffff; border-radius:12px; border-left:6px solid #e0a83a; padding:30px 34px;">
+            <div class="pl-no" style="flex:none; font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:58px; color:#e0a83a; line-height:.9; width:64px; text-align:center;">4</div>
+            <div style="flex:1; min-width:0;">
+              <div class="pl-title" style="font-family:'Zilla Slab'; font-weight:700; font-size:24px; color:#1f2f6e; line-height:1.1;">A dedicated roof-repair fund for climate readiness</div>
+              <div class="pl-body" style="font-family:'Newsreader',Georgia,serif; font-size:18px; line-height:1.5; color:#4a463e; margin-top:12px;">Create a dedicated fund to help families repair their roofs — climate readiness that pays off twice. A sound roof stands up to bigger storms, and it&#x27;s the foundation any home needs before it can safely carry solar panels.</div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Climate readiness</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Roof repair</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Storm resilience</span>
+              </div>
+            </div>
+          </div>
+          <div class="pl-step" style="display:flex; gap:26px; align-items:flex-start; background:#ffffff; border-radius:12px; border-left:6px solid #e0a83a; padding:30px 34px;">
+            <div class="pl-no" style="flex:none; font-family:'Newsreader',Georgia,serif; font-weight:600; font-size:58px; color:#e0a83a; line-height:.9; width:64px; text-align:center;">5</div>
+            <div style="flex:1; min-width:0;">
+              <div class="pl-title" style="font-family:'Zilla Slab'; font-weight:700; font-size:24px; color:#1f2f6e; line-height:1.1;">Subsidized solar for the half of us without any PV</div>
+              <div class="pl-body" style="font-family:'Newsreader',Georgia,serif; font-size:18px; line-height:1.5; color:#4a463e; margin-top:12px;">About half of Hawaiʻi residents still have no solar at all — often renters and working families who couldn&#x27;t afford the upfront cost. Subsidize rooftop PV so those households finally share in the cheapest power in the islands, not just the ones who could already pay.</div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:16px;">
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Subsidized PV</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Renters</span>
+                <span style="font-family:'Zilla Slab'; font-weight:700; font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:#1f2f6e; background:#f3f0e9; border:1px solid #e4e0d6; padding:5px 11px; border-radius:20px;">Equity</span>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SHARE ===== -->
+  <div id="voice" class="pl-section pl-voice" style="scroll-margin-top:82px; background:#f3f0e9; padding:56px 24px 60px 24px; border-bottom:1px solid #e4e0d6;">
+    <div style="max-width:1040px; margin:0 auto; text-align:center;">
+      <div style="font-family:'Zilla Slab'; font-weight:700; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:#c12f2a;">Public power, public benefit</div>
+      <h2 style="font-family:'Zilla Slab'; font-weight:700; font-size:36px; line-height:1.05; color:#16171c; margin:12px auto 0 auto; max-width:660px;">What would lower power bills mean for your ʻohana?</h2>
+      <p style="font-family:'Newsreader',Georgia,serif; font-size:19px; line-height:1.5; color:#4a463e; margin:14px auto 0 auto; max-width:600px;">Tell Ikaika what you pay now — and whether your roof could carry solar with a little help.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:26px;">
+        <a href="sms:8082212843" style="padding:14px 24px; background:#c12f2a; color:#ffffff; font-family:'Zilla Slab'; font-weight:700; font-size:16px; border-radius:6px;">Text Ikaika · 808-221-2843</a>
+        <a href="index.html#voice" style="padding:14px 24px; background:#ffffff; border:1px solid #dcd7cb; color:#1f2f6e; font-family:'Zilla Slab'; font-weight:700; font-size:16px; border-radius:6px;">Send a note</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="pl-footer" style="background:#16213f; padding:44px 24px 40px 24px;">
+    <div style="max-width:1040px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+      <div style="display:flex; align-items:center; gap:16px;">
+        <img src="assets/logo.png" alt="Ikaika Lardizabal Hussey" style="width:150px; height:auto; display:block; filter:brightness(0) invert(1); opacity:.96;">
+        <div style="font-family:'Zilla Slab'; font-weight:700; font-size:16px; color:#ffffff; line-height:1.15;">Re-elect Ikaika. <span style="color:#e0a83a;">He gets it done.</span></div>
+      </div>
+      <a href="index.html" style="font-family:'Zilla Slab'; font-weight:700; font-size:14px; color:#dfe3f0;"><span style="color:#e0a83a;">←</span> Back to the legislative report</a>
+    </div>
+    <div style="max-width:1040px; margin:22px auto 0 auto; font-family:'Zilla Slab'; font-size:11.5px; color:#7e86a6;">Paid for by Ikaika Hussey for Hawaii · District 29 · Kalihi · Kapālama · Kahauiki</div>
+  </div>
+
+  <div style="height:8px; background:linear-gradient(90deg, #1f2f6e 0 40%, #e0a83a 40% 70%, #c12f2a 70% 100%);"></div>
+
+</div>
+</body>
+</html>

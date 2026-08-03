@@ -269,6 +269,7 @@
     .ik-hero-title { font-size: 58px !important; }
     .ik-voice-grid, .ik-donate-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
     .ik-notes-grid { grid-template-columns: 1fr !important; }
+    .ik-notes-grid > a { grid-column: auto !important; }
     .ik-footer-grid { grid-template-columns: 1fr 1fr !important; }
   }
 
@@ -1355,28 +1356,42 @@
     <div class="ik-sec" style="max-width: 1120px; margin: 0px auto; padding: 58px 24px 60px;">
       <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(193, 47, 42);">From Ikaika&rsquo;s desk</div>
       <h2 style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 40px; line-height: 1.04; color: rgb(22, 23, 28); margin: 12px 0px 0px; max-width: 780px;">Longer notes on the hard problems.</h2>
-      <p style="font-family: Newsreader, Georgia, serif; font-size: 18px; line-height: 1.5; color: rgb(74, 70, 62); margin: 14px 0px 0px; max-width: 680px;">Three essays &mdash; footnoted, sourced, and honest about the trade-offs &mdash; on the fights that will define the next two years.</p>
+      <p style="font-family: Newsreader, Georgia, serif; font-size: 18px; line-height: 1.5; color: rgb(74, 70, 62); margin: 14px 0px 0px; max-width: 680px;">Five essays &mdash; footnoted, sourced, and honest about the trade-offs &mdash; on the fights that will define the next two years.</p>
 
-      <div class="ik-notes-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 32px;">
+      <div class="ik-notes-grid" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 32px;">
 
-          <a href="monster-homes.html" style="display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
-            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">Housing &middot; Zoning &middot; Enforcement</div>
-            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">Monster homes and the density we refuse to build</div>
-            <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">Why $250-a-day fines built an industry &mdash; and how disgorgement of illegal rents, licensing accountability, and lawful density end it.</div>
-            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
-          </a>
-
-          <a href="homelessness.html" style="display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
-            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">Housing &middot; Health &middot; Land Justice</div>
-            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">Homelessness is not one problem</div>
-            <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">Four populations wear one word. The 2026 count, what Finland actually did, and the number our kauhale program doesn&rsquo;t publish.</div>
-            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
-          </a>
-
-          <a href="money-in-politics.html" style="display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
+          <a href="money-in-politics.html" style="grid-column: span 2; display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
             <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">Democracy &middot; Campaign Finance</div>
             <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">What money buys</div>
             <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">The contractor loophole we kept for twenty years, why a pledge is not a reform, and the Citizens United argument no state has tried.</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
+          </a>
+
+          <a href="ahupuaa-co-management.html" style="grid-column: span 2; display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">&#699;&#256;ina &middot; Water &middot; Cooperative Economy</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">One ahupua&#699;a, one manager</div>
+            <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">Act 203 lets communities co-manage public land for sixty-five years. A case for stewarding Kalihi ridge to reef &mdash; forest, stream and loko i&#699;a.</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
+          </a>
+
+          <a href="public-safety.html" style="grid-column: span 2; display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">Public Safety &middot; Policing &middot; Family Violence</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">Whose safety, and where</div>
+            <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">Safety in public and safety at home are different problems. On lighting that works and the officer hours we spend on parking.</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
+          </a>
+
+          <a href="homelessness.html" style="grid-column: span 3; display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">Housing &middot; Health &middot; Land Justice</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">Homelessness is not one problem</div>
+            <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">Four populations wear one word. The 2026 count, the land claims behind Native Hawaiian homelessness, what Finland actually did, and the number our kauhale program doesn&rsquo;t publish.</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
+          </a>
+
+          <a href="monster-homes.html" style="grid-column: span 3; display: flex; flex-direction: column; background: rgb(255, 255, 255); border-width: 4px 1px 1px; border-style: solid; border-color: rgb(31, 47, 110) rgb(228, 224, 214) rgb(228, 224, 214); border-radius: 10px; padding: 26px 28px; transition: transform 0.2s, box-shadow 0.2s; color: inherit;">
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(193, 47, 42);">Housing &middot; Zoning &middot; Enforcement</div>
+            <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 21px; color: rgb(31, 47, 110); margin-top: 8px; line-height: 1.12;">Monster homes and the density we refuse to build</div>
+            <div style="font-family: Newsreader, Georgia, serif; font-size: 15.5px; line-height: 1.45; color: rgb(95, 90, 81); margin-top: 10px; flex: 1 1 0%;">Why $250-a-day fines built an industry, the missing middle we stopped building, and the 1926 case that made our neighborhoods unwalkable.</div>
             <div style="font-family: &quot;Zilla Slab&quot;; font-weight: 700; font-size: 15px; color: rgb(31, 47, 110); margin-top: 16px;">Read the note <span style="color: rgb(193, 47, 42);">&rarr;</span></div>
           </a>
 
